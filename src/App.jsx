@@ -17,7 +17,7 @@ function App() {
 	useEffect(() => {
 		setIsLoading(true);
 
-		fetch("http://api.tvmaze.com/shows")
+		fetch("https://api.tvmaze.com/shows")
 			.then((res) => res.json())
 			.then((data) =>
 				data.sort((a, b) => b.rating.average - a.rating.average)
